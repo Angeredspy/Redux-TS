@@ -14,7 +14,7 @@ const RepositoriesList: React.FC = () => {
     return ( 
     <div>
         <form onSubmit={onSubmit}>
-            <input /> 
+            <input value={term} onChange={e => setTerm(e.target.value)}/> 
             <button>Search</button>
         </form>
     </div>
